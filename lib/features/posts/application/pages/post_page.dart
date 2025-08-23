@@ -1,12 +1,11 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:postscleanarchitecture/features/posts/application/postbloc/posts_bloc.dart';
-
 import 'package:provider/provider.dart';
+import 'package:go_router/go_router.dart';
 
-import '../../../core/utils/theme_service.dart';
-import '../../../core/injection_container/injectable.dart';
+import '../../../../config/theme/theme_service.dart';
+import '../../../../core/injection_container/injectable.dart';
 
 // class PostWrapper extends StatelessWidget {
 //   const PostWrapper({super.key});
@@ -105,8 +104,7 @@ class _PostPageState extends State<PostPage> {
                   return ListView.builder(
                       itemCount: state.posts.length,
                       itemBuilder: (context,index){
-                        return   Card(
-
+                        return Card(
                           child: ListTile(
                             leading: CircleAvatar(
                               child: Center(
@@ -115,6 +113,10 @@ class _PostPageState extends State<PostPage> {
                             ),
                             title: Text(state.posts[index].title),
                             subtitle: Text(state.posts[index].body),
+                            onTap: () {
+                              // Navigate to post details using GoRouter
+                              context.go('/posts/${state.posts[index].id}');
+                            },
                           ),
                         );
                       });
