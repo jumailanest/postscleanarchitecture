@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:postscleanarchitecture/theme.dart';
+import 'package:postscleanarchitecture/core/utils/theme.dart';
 
 import 'package:provider/provider.dart';
 
 import 'core/utils/theme_service.dart';
 import 'features/posts/application/post_page.dart';
 import 'features/posts/application/postbloc/posts_bloc.dart';
-import 'injection_container/injectable.dart';
+import 'core/injection_container/injectable.dart';
 
 
 

@@ -6,7 +6,7 @@ import 'package:postscleanarchitecture/features/posts/application/postbloc/posts
 import 'package:provider/provider.dart';
 
 import '../../../core/utils/theme_service.dart';
-import '../../../injection_container/injectable.dart';
+import '../../../core/injection_container/injectable.dart';
 
 // class PostWrapper extends StatelessWidget {
 //   const PostWrapper({super.key});

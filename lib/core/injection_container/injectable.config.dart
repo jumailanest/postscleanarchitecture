@@ -24,7 +24,7 @@ import 'package:postscleanarchitecture/features/posts/domain/repositories/i_post
     as _i381;
 import 'package:postscleanarchitecture/features/posts/domain/usecases/posts_usecase.dart'
     as _i986;
-import 'package:postscleanarchitecture/injection_container/injectable.dart'
+import 'package:postscleanarchitecture/core/injection_container/injectable.dart'
     as _i838;
 
 extension GetItInjectableX on _i174.GetIt {
